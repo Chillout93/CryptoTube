@@ -27,6 +27,8 @@
         </dd>
 
     </dl>
+
+	@Html.ActionLink("Create Video", "Create", "Videos", new { @channelName = Model.Name }, null)
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Name }) |

@@ -7,6 +7,7 @@ using System.Web;
 
 namespace CryptoTube.Models {
 	public class Subscription {
+
 		[ForeignKey("User")]
 		[Key, Column(Order = 0)]
 		public string UserEmail { get; set; }
@@ -15,8 +16,8 @@ namespace CryptoTube.Models {
 		[Key, Column(Order = 1)]
 		public string Name { get; set; }
 		
-		public User User { get; set; }
-		public Channel Channel { get; set; }
+		public virtual User User { get; set; }
+		public virtual Channel Channel { get; set; }
 
 		public DateTime Created { get; set; }
 		public DateTime Modified { get; set; }

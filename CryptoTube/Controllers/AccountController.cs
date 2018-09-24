@@ -449,7 +449,7 @@ namespace CryptoTube.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Videos");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

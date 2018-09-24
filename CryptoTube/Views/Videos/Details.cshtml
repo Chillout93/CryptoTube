@@ -1,0 +1,37 @@
+﻿@model CryptoTube.Models.Video
+
+<h1>Title: @Model.Title</h1>
+<h2>
+	Subscribe:  @using (Html.BeginForm("Create", "Subscriptions", FormMethod.Post)) {
+		@model CryptoTube.Models.Subscription
+		@Html.AntiForgeryToken()
+		@Html.HiddenFor(x => Model.)
+		<input type="submit" value="Subscribe" class="btn btn-default" />
+	}</ h2 >
+	<p>Description: @Model.Description</p>
+	<hr />
+	<video width="320" height="240" controls>
+		<source src="@Model.RelativeFilePath" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+
+	<h2>Views: @Model.Views.Count</h2>
+	<h2>@Html.ActionLink(@Model.Channel.Name, "Details", "Channels", new { id = @Model.Channel.Name }, null)</h2>
+	<h2>Comments</h2>
+
+	<ul>
+		@foreach (var comment in Model.Comments) {
+			<li>User: @comment.User.UserName Comment: @comment.Description</li>
+		}
+	</ul>
+
+	<ul>
+		@foreach (var video in Model.RecommendedVideos) {
+			<li>
+				Video: @video.Title, Channel: @Html.ActionLink(video.Channel.Name, "Details", "Channels", new { id = video.Channel.Name }, null), Thumbnail:
+				<video preload="metadata" width="160" height="120">
+					<source src="@video.RelativeFilePath" type="video/mp4">
+				</video>
+			</li>
+		}
+	</ul>

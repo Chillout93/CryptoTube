@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MWInterface xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Date>2017-11-23T12:54:24.1741978+00:00</Date>
+  <TransactionId>EBU5061807-01</TransactionId>
+  <SoftwareVersion>v1.0.0.0</SoftwareVersion>
+  <Orders>
+    <Order>
+      <OrderNumber>EBU5061807-01</OrderNumber>
+      <ChannelOrderNumber>2844232348</ChannelOrderNumber>
+      <OrderType>ONLINE</OrderType>
+      <OrderDate>2017-11-22T11:36:27.893</OrderDate>
+      <BillToAddress>
+        <FirstName>venkata</FirstName>
+        <LastName>bhamidipati</LastName>
+        <Company />
+        <Address1>address1</Address1>
+        <Address2>address2</Address2>
+        <City>Alabama</City>
+        <Province>AL</Province>
+        <PostalCode>123456</PostalCode>
+        <CountryCode>US</CountryCode>
+        <Phone>12345677</Phone>
+        <Email>abc@ab.com</Email>
+      </BillToAddress>
+      <ShipToAddress>
+        <FirstName>venkata</FirstName>
+        <LastName>venkata</LastName>
+        <Address1>address1</Address1>
+        <Address2>address2</Address2>
+        <City>Alabama</City>
+        <Province>AL</Province>
+        <PostalCode>123456</PostalCode>
+        <CountryCode>US</CountryCode>
+        <Phone>12345677</Phone>
+        <Email>abc@ab.com</Email>
+      </ShipToAddress>
+      <PaymentMethod>ChannelPayment EBU payment </PaymentMethod>
+      <ShipMethodName>Website Standard USA</ShipMethodName>
+      <ShipServiceCode>WEUS</ShipServiceCode>
+      <ShipPriority>WEUS</ShipPriority>
+      <DiscountCode />
+      <OrderItems>
+        <Product Line="1" Barcode="5052776481373" Skucode="023123013004" Name="Mountain Warehouse Helsinki Womens Softshell Jacket Breathable Lightweight Showerproof" Qty="1" NetUnitValue="20.0000" GrossUnitValue="20.00" IsShippable="true" ItemType="Product" LineGrossValue="20.00" />
+      </OrderItems>
+      <TaxSubTotal>0</TaxSubTotal>
+      <ProductSubTotal>20.00</ProductSubTotal>
+      <ShipingCost>15.0000</ShipingCost>
+      <OrderTotal>35.0000</OrderTotal>
+      <CurrencyCode>USD</CurrencyCode>
+    </Order>
+  </Orders>
+</MWInterface>
